@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.main {
+    background-image: url("bg.jpg");
+    background-position: center center;
+    /*------*/
+    background-size: max(1200px, 100vw);
+    /*------*/
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.68;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    max-width: 65vw;
+    /*------*/
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 118px;
+    height: 48px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.hero {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: calc(100% - 62px);
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 15px;
+    padding: 0 30px;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 390;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 250;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.seperation {
+    background-color: rgb(48, 44, 44);
+    height: 7.5px;
+}
+
+.btn {
+    padding: 3px 11px;
+    background-color: rgba(65, 65, 65, 0.205);
+    border: 0;
+    color: white;
+    border: 0.5px solid rgba(224, 224, 224, 0.651);
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 450;
+    padding: 7px 16px;
+    font-size: 14px;
+    border: 1px solid rgba(170, 170, 170, 0.5);
+    vertical-align: middle;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: aliceblue;
+
+}
+
+.main input {
+    padding: 7px 102px 8px 14px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: rgba(11, 11, 11, 0.7);
+    border: 0.5px solid rgba(170, 170, 170, 0.5);
+}
+
+.main input:hover {
+    border: 1px solid white;
+}
+
+.btn-red:hover {
+    border: 0.5px solid white;
+}
+
+.btn:hover {
+    border: 1.5px solid white;
+}
+
+.btn-red-sm:hover {
+    border: 0.4px solid white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.secImg {
+    position: relative;
+
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 5;
+
+}
+
+.secImg video {
+    position: absolute;
+    top: 55px;
+    right: 42px;
+    height: 135px;
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :first-child {
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+
+.FAQ h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: 'Trebuchet MS', sans-serif
+}
+
+.FAQ {
+    background: rgba(0, 0, 0, 0.534);
+    color: white;
+    padding: 9px;
+}
+
+.FAQbox svg {
+    filter: invert(1)
+}
+
+.FAQbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(168, 168, 168, 0.253);
+    padding: 8px;
+    margin: auto;
+    max-width: 48vw;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 0.1px solid rgba(224, 224, 224, 0.459);
+    transition: all 0.7s ease-out;
+}
+
+.FAQbox:hover {
+    border: 1.99px solid white;
+    background-color: rgba(168, 168, 168, 0.63);
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+    font-size: 0.89rem;
+}
+
+footer .questions {
+    padding: 34px 0;
+    gap: 25px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-out;
+    gap: 25px;
+}
+
+.footer a:hover {
+    text-decoration: white underline;
+    font-size: 1rem;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 25px;
+}
+#back_2_top {
+    display: flex;
+    margin:30px 15px ;
+    justify-content: space-evenly;
+    color: white;
+}
+@media (max-width: 960px) {
+    nav {
+        max-width: 90vw;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 20px;
+        margin-top: -43px;
+    }
+
+    .main input {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .btn-red {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secImg img {
+        width: 80vw;
+    }
+
+    .secImg video {
+        width: 60vw;
+        height: auto;
+        top: 40px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .FAQbox {
+        max-width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav .hero_buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .first span{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .hero > :nth-child(1),
+    .hero > :nth-child(3) {
+        font-size: 1.4rem;
+        margin-bottom: 17px;
+    }
+    .hero > :nth-child(2){
+        font-size: 0.9rem;
+        font-weight: bolder;
+       
+    }
+    .low_span{
+        margin: 15px 10px 20px 10px;  
+    }
+
+    .FAQ h2 {
+        font-size: 1.5rem;
+        margin: 15px 10px 20px 10px;/*margine:top,right,bottom,left*/
+    }
+
+    .FAQbox {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding: 16px;
+        margin-top:0px;
+        margin-bottom:12px;
+    }
+}
+
+
