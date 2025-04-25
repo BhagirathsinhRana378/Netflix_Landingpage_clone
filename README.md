@@ -1,4 +1,3 @@
-
 🎬 Netflix Landing Page Clone
 
 📌 Overview
