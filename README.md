@@ -15,5 +15,5 @@ The project recreates the look and feel of Netflix’s homepage, complete with a
 
 🛠️ Technologies Used:
 
-HTML5
+HTML5,
 CSS3
