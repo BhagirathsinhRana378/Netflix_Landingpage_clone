@@ -13,3 +13,6 @@ The project recreates the look and feel of Netflix’s homepage, complete with a
 ## 🛠 Technologies Used
 - HTML5  
 - CSS3
+
+- # Have a live demo
+-  live at:https://bhagirathsinhrana378.github.io/Netflix_Landingpage_clone/
